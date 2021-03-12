@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Title Page-->
+    <title>Make Deposit</title>
+
+     <!-- Fontfaces CSS-->
+    <link href="{{ url_for('static', filename='css/dash/font-face.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/dash/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/dash/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/dash/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="{{ url_for('static', filename='css/bs/bootstrap.min.css') }}" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='css/vendor/animsition.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/animate.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/hamburgers.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/slick.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/vendor/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main/theme.css') }}" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main/font-awesome.min.css') }}"> 
+ 
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop4">
+            <div class="container">
+                <div class="header4-wrap">
+                    <div class="header__logo">
+                        
+                           <a href="/"> <img src="{{ url_for('static', filename='img/logo.png') }}"></a>
+                        
+                    </div>
+                    <div class="header__tool">
+
+                    
+                         
+						 
+                         &nbsp &nbsp
+						 
+                        <div class="account-wrap">
+                            <div class="account-wrap">
+
+                                <div class="content">
+                                    <a href="/logout"><button>Logout</button></a>
+                                </div>
+                                
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER DESKTOP -->
+		
+ 
+
+        <!-- PAGE CONTENT-->
+        <div class="page-container3">
+            <br>
+            <section>
+                <div class="container">
+                    <div class="row">
+           
+					 <div class="col-xl-3">
+						
+                            <!-- MENU SIDEBAR-->
+                            <aside class="menu-sidebar3 js-spe-sidebar">
+                                <nav class="navbar-sidebar2 navbar-sidebar3">
+                                    <ul class="list-unstyled navbar__list">
+									
+                                       <li class="active">
+                                            <a class="js-arrow" href="/">
+                                               <i style="font-size:19px"></i>Dashboard
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="makedeposit">
+                                            <i style="font-size:19px"></i>Make Deposit</a>
+                                            
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="mydeposit">
+                                                <i style="font-size:19px"></i>My Deposits</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a class="js-arrow" href="transaction">
+                                                <i style="font-size:19px"></i>Transactions
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a class="js-arrow" href="referal">
+                                                <i style="font-size:19px"></i>Referral
+                                                 
+                                            </a>
+                                             
+                                        </li>
+                                        
+                                   
+                                            
+
+
+                                         
+
+
+
+
+                                        
+										
+                                    </ul>
+                                </nav>
+                            </aside>
+                            <!-- END MENU SIDEBAR-->
+                        </div>
+		
+						
+                        <div class="col-xl-9">
+                            <!-- PAGE CONTENT-->
+                            <div class="page-content">
+                            <!-- STATISTIC-->
+         
+                <div class="section__content section__content--p30">
+               
+            <!-- END STATISTIC-->
+
+								
+								
+		<div class="row">
+		
+		   <div class="col-lg-12">
+                                      
+			 
+		<div class="card">
+			<div class="card-header">
+				<strong> Make Your Profit After 24h. </strong>
+			</div>
+                 <div class="card-body card-block">
+
+			 
+<p class="error_message" id="error_msg">
+   
+</p>
+       
+
+<form action="/makedeposit" class="form-horizontal" method="post" accept-charset="utf-8"> 
+  
+    
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Plan</label>
+      <div class="col-sm-6">
+	     <select class="form-control" name="id"> <option>160% after 24h</option>
+      </div>
+       
+    </div>
+			
+
+
+	<div class="form-group row">
+      <label class="col-sm-2 col-form-label">Amount</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" name="invamount" placeholder="Deposit Amount BTC" required><br>
+        <li style=color:red>Min. Deposit: 0.0001 BTC for 160% </li>
+        
+      </div>
+
+    </div>
+
+	
+    
+ 
+                                      
+                                          
+                                      
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">
+                Create Deposit
+            </button>
+            
+        </div>
+    </div>
+</a>
+								
+       </form>                         
+                       
+                            
+			 
+		 
+	
+		</div>
+		
+
+	</div>
+								
+								
+								
+<div class="row"><div class="col-lg-12"> &nbsp <br><br><br><br><br><br><br><br></div></div>
+								
+                            
+
+
+<br><br>
+                                
+
+                                
+                            </div>
+                            <!-- END PAGE CONTENT-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END PAGE CONTENT  -->
+
+<br><br>
+<div id="footer" class="container-fluid">
+    <div class="container">
+                            <div class="row">
+                        
+                            <img src="{{ url_for('static', filename='img/logo.png') }}">
+                        
+                    </div><br>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 text-left">
+                <h4>     Copyrights ©2020 All Rights Reserved</h4>
+                <p>Easy to use cryptocurrency doubler system. Multiply your coin in just  24 hours. Bitcoin doubler</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="footer-menu-holder">
+                    <h4>Earn Free Coins</h4>
+                    <p><strong>Want free coin? Extra coins?</strong> Just share your referral link to your friends. You will earn 10% from each of their deposit.</p><p>
+                </div>
+            </div>           
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="footer-menu-holder">
+                    <h4>Where to Buy Coin?</h4>
+                    <p>Only buy your coins from trusted exchangers. These are some of them.</p>
+                    <p><a href="https://www.binance.com/" target="_blank">Binance.com</a>, <a href="https://bittrex.com/" target="_blank">Bittrex.com</a>, <a href="https://cex.io/" target="_blank">Cex.io</a>, <a href="https://www.coinbase.com/" target="_blank">Coinbase.com</a>, <a href="https://www.kraken.com/" target="_blank">Kraken.com</a>, <a href="https://localbitcoins.com/" target="_blank">LocalBitcoins.com</a>, <a href="https://www.luno.com/" target="_blank">Luno.com</a>, <a href="https://remitano.com/" target="_blank">Remitano.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>    
+
+   <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='js/dash/jquery-3.2.1.min.js') }}"></script>
+    <!-- Bootstrap JS-->
+    <script src="{{ url_for('static', filename='js/dash/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dash/bootstrap.min.js') }}"></script>
+    <!-- Vendor JS       -->
+    <script src="{{ url_for('static', filename='js/dash/slick.min.js') }}">
+    </script>
+    <script src="{{ url_for('static', filename='js/dash/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dash/animsition.min.js') }}"></script>
+     
+   
+    <script src="{{ url_for('static', filename='js/dash/circle-progress.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dash/perfect-scrollbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dash/select2.min.js') }}">
+    </script>
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/dash/main.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/dash/countdown.js') }}"></script> 
+  <script type="text/javascript" src="{{ url_for('static', filename='js/dash/custom.js') }}"></script> 
+</body>
+
+</html>
+<!-- end document--> 
+

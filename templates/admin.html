@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+</head>
+<body>
+<h2>Add Desposite</h2>
+<form action="/admin" method='POST'>
+	<label>BTC Number : </label>
+	<input type="text" name="btcnum">
+	<br>
+	<label>Add Value : </label>
+	<input type="text" name="addv">
+	<button type='submit'>Change</button>
+</form>
+
+<h2>Add Commission</h2>
+<form action="/addcom" method='POST'>
+	<label>BTC Number : </label>
+	<input type="text" name="btcnum">
+	<br>
+	<label>Add Value : </label>
+	<input type="text" name="addv">
+	<button type='submit'>Change</button>
+
+</form>
+<h2>Add Time to account</h2>
+<form action="/addtime" method="POST">
+<label>Bitcoin Account</label>
+<input type="text" name="btac">
+<br>
+<label>End Date</label>
+<input type="date" name="stdate">
+<br>	
+<label>End Time</label>
+<input type="text" name="enddate">
+<br>
+<label>Deposited Amount</label>
+<input type="text" name="deam">
+<br>
+<label>Profit Amount</label>
+<input type="text" name="pam">	
+<button type="submit"> Submit</button>
+</form>
+</body>
+</html>

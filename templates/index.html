@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<title>CRYPTO-PIRATES - 160% Profit</title>
+<meta name="description" content="Make Your Profit After 24h/48h. Bitcoin, Litecoin, Dashcoin, Dogecoin and Ethereum Doubler">
+<meta name="author" content="Coin2X">
+<meta name="keyword" content="bitcoin doubler, litecoin doubler, dashcoin doubler, dogecoin doubler, ethereum doubler, cryptocurrency doubler, cloner, duplicate, multiply, invest">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/462b6de451.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='img/favico.ico') }}" type="image/x-icon">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginpage/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loginpage/bootstrap-slider.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loginpage/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loginpage/slick.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/loginpage/style-blue.css') }}">
+
+</head>
+<body>
+<div id="header-holder">
+    <div class="bg-animation"></div>
+    <nav id="nav" class="navbar navbar-default navbar-full">
+        <div class="container-fluid">
+                        <div class="container container-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="logo-holder" href="{{ url_for('static', filename='img/logo.png') }}">
+                                <div class="logo" style="width:62px;height:18px"></div>
+                            </a>
+                        </div>
+                        <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse" id="bs">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/faq">FAQs</a></li>
+                                <li><a href="/stats">Statistics</a></li>
+                                <li><a href="/agreement">Rules</a></li>
+                                <li><a href="/contact">Support</a></li>
+                               
+                                
+
+                                <li class="support-button-holder"><a class="support-button" href="#">Double Now</a></li>
+
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </nav>
+    
+
+    
+    
+    
+    <div id="top-content" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="main-slider">
+                        <div class="slide info-slide1">
+                            <div class="icon-holder">
+                                <div class="icon-bg"></div>
+                                <i class="htfy htfy-trophy"></i>
+                            </div>
+                            <div class="big-title">Welcome to <span>CRPYTO-PIRATES</span></div>
+                        </div>
+                        <div class="slide info-slide2">
+                            <div class="icon-holder">
+                                <div class="icon-bg"></div>
+                                <i class="htfy htfy-speedometer"></i>
+                            </div>
+                            <div class="big-title">Totally secured <span>system</span></div>
+                        </div>
+                        <div class="slide info-slide3">
+                            <div class="icon-holder">
+                                <div class="icon-bg"></div>
+                                <i class="htfy htfy-padlock"></i>
+                            </div>
+                            <div class="big-title">160% Profit in<br><span>24hr</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="arrow-button-holder">
+                        <a href="#double">
+                            <div class="button-text">Are You Ready?</div>
+                            <div class="arrow-icon">
+                                <i class="fa fa-angle-double-down" style="font-size:36px"></i>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <a name="double"></a>
+<div id="extra-info" class="container-fluid">
+    <div class="container">        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row-title">Make Your Profit After 24hr</div>
+            </div>
+        </div>
+        <div class="row text-center">
+            
+            <div class="col-md-12"> 
+             
+                <div class="info-text">Choose a coin type and enter your wallet address:</div>
+                
+
+                <form action="/login/new" class="form-inline" method="POST" accept-charset="utf-8"> 
+                <input type="hidden" name="csrf_hash_name" value="3a1be858715f1dbbe5f966bde8e3fabb">  
+ 
+                    <p>
+
+                     <select name="type" id="type" class="form-control" required>
+                        
+                        <option value="BTC">Coin - Bitcoin</option>
+               
+                    </select>
+
+                <input name="amount" id="amount" type="hidden" class="form-control" placeholder="Your deposit amount" required >
+                <input name="wallet" id="wallet" type="text" class="form-control" placeholder="Your Wallet Address"  size="50" minlength='26' maxlength='35' required >
+                 
+                
+
+                <input type="submit" class="ybtn ybtn-accent-color ybtn-shadow" value="Start">
+
+
+
+                    </p>
+
+                </form>
+
+            
+
+                <p class="error_message" id="error_msg">
+                    
+                </p>
+                
+                
+                
+                
+                             </div>
+        </div>
+<br>
+                    <div class="row">
+            <div class="col-md-12">
+                <div class="row-title">Our Plan</div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div id="result" class="text-left custom-plan-box">
+
+                  
+                                              <div class="col-md-6">
+                            <div class="service-box">
+                 
+                  
+                       <div class="service-title"><h2 class="number">160%</h2></div>
+                    <div class="service-details">
+                        <p><span class="desc">After 24 hours!</span></p>
+                        <h4><small>Min: 0.0001 BTC</small></h4>
+                        <div class="support-button-holder"><a class="support-button" href="#double">Start Now</a></div>
+                    </div>
+                            
+                             
+                              <div class="service-icon">
+                             <img src="{{ url_for('static', filename='img/p2.png') }}" alt="">
+                              </div>
+                             </div>
+                            </div>
+                  
+                  
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+         
+
+                        
+
+
+
+<div id="testimonials" class="container-fluid">
+    <div class="bg-color"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row-title">Site Statistics</div>
+            </div>
+        </div>
+        
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                            <div class="service-box">
+                   <center>
+                       <div class="service-title"><h2 class="number">2</h2></div>
+                    <div class="service-details">
+                        <p><span class="desc">Running Days</span></p>
+                    </div>
+                            
+                             
+                              <div class="service-icon">
+                             <img src="{{ url_for('static', filename='img/calendar.png') }}" alt="">
+                              </div>
+                             </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-box">
+                    <center>
+                        <div class="service-title"><h2 class="number">1013</h2></div>
+                    <div class="service-details">
+                        <p><span class="desc">Total Users</span></p>
+                    </div>
+                                        
+                            
+                                    <div class="service-icon">
+                             <img src="{{ url_for('static', filename='img/user.png') }}" alt="">
+                              </div>
+                                </div>
+                            </div>
+
+                        </div>
+<br>
+        
+        <div class="row">
+            <div class="col-xs-12">
+                
+  
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+             <h4>Total Deposits:</h4>
+             <br />
+             <div class="table-responsive">
+             <table class="table">
+                <tr>
+                     <th>Bitcoin</th>
+                     <td>2.243346<img src="{{ url_for('static', filename='img/btc.png') }}" width=18 alt=""></td>
+                 </tr>
+         
+                 
+
+             </table>
+             </div>
+            
+            
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Total Payouts:</h4><br />
+            <div class="table-responsive">
+             <table class="table">
+                <tr>
+                     <th>Bitcoin</th>
+                     <td>0.835017 <img src="{{ url_for('static', filename='img/btc.png') }}" width=18 alt=""></td>
+                 </tr>
+        
+                 
+
+             </table>
+             </div>
+            
+          
+
+
+       
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="services" class="container-fluid">
+    <div class="bg-color"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row-title">Why Us?</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='img/coins.png') }}" alt="">
+                    </div>
+                    <div class="service-title">Multiple-Coins</div>
+                    <div class="service-details">
+                        <p>Coin accepted here: Bitcoin</p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-12 col-md-6">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='img/easy.png') }}" alt="">
+                    </div>
+                    <div class="service-title">Simple &amp; Easy</div>
+                    <div class="service-details">
+                        <p>Professional, simple and easy. No sign up. Enter your wallet address, make a deposit and receive 160% after 24hr</p>
+                    </div>
+                </div>
+            </div>
+            
+                        <div class="col-sm-12 col-md-6">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='img/team.png') }}" alt="">
+                    </div>
+                    <div class="service-title">10% Referral Commission</div>
+                    <div class="service-details">
+                        <p>Earn more by bringing people to use this platform using your referral link. 10% commission paid to your wallet from referrals deposit.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='img/secure.png') }}" alt="">
+                    </div>
+                    <div class="service-title">Safe &amp; Secure</div>
+                    <div class="service-details">
+                        <p>All data transfers will use secured HTTPS connection. Totally Encrypted and Protected. Zero worry!!.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="features" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row-title">3 Easy Steps</div>
+            </div>
+        </div>
+        <div class="row rtl-cols">
+            <div class="col-sm-12 col-md-6">
+                <div id="features-links-holder">
+                    <div class="icons-axis">
+                        <img src="{{ url_for('static', filename='img/sfeature4.png') }}" alt="">
+                    </div>
+                    <div class="feature-icon-holder feature-icon-holder1 opened" data-id="1">
+                        <div class="animation-holder"><div class="special-gradiant"></div></div>
+                        <div class="feature-icon"><i class="fa fa-id-card"></i></div>
+                        <div class="feature-title">Step 1 : Your Wallet</div>
+                    </div>
+                    <div class="feature-icon-holder feature-icon-holder3" data-id="2">
+                        <div class="animation-holder"><div class="special-gradiant"></div></div>
+                        <div class="feature-icon"><i class="fa fa-angle-double-down"></i></div>
+                        <div class="feature-title">Step 2 : Deposit</div>
+                    </div>
+                    <div class="feature-icon-holder feature-icon-holder5" data-id="3">
+                        <div class="animation-holder"><div class="special-gradiant"></div></div>
+                        <div class="feature-icon"><i class="fa fa-clone"></i></div>
+                        <div class="feature-title">Step 3 : Payout</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div id="features-holder">
+                    <div class="feature-box feature-d1 show-details">
+                        <div class="feature-title-holder">
+                            <span class="feature-icon"><i class="fa fa-id-card"></i></span>
+                            <span class="feature-title">1. Enter Your Wallet Address</span>
+                        </div>
+                        <div class="feature-details">
+                            <p >Your wallet address will be used for payouts.</p>
+                            <p >This is the only information that you need to provide. No private details are required.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-d2">
+                        <div class="feature-title-holder">
+                            <span class="feature-icon"><i class="fa fa-angle-double-down"></i></span>
+                            <span class="feature-title">2. Make a Deposit</span>
+                        </div>
+                        <div class="feature-details">
+                            <p>Deposit your desired amount. The doubled payout amount will be based on your deposit amount.</p>
+                            <p>For example, if you deposit 0.0005 BTC, the payout will be 0.0008 BTC.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-d3">
+                        <div class="feature-title-holder">
+                            <span class="feature-icon"><i class="fa fa-clone"></i></span>
+                            <span class="feature-title">3. Payout 24 hours.</span>
+                        </div>
+                        <div class="feature-details">
+                            <p>Once the deposit is confirmed, after 24 hours, the 160% earned amount will be sent to the address you provide.</p>
+                            <p>This process is automated in the system so that no human error can affect the flow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="more-features" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row-title">CRPYTO-PIRATES System</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="mfeature-box">
+                    <div class="mfeature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                        
+                    </div>
+                    
+                    <div class="mfeature-title">No Sign Up Needed</div>
+                    <div class="mfeature-details">No complicated process. No sign up. No private information is saved to the system.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="mfeature-box">
+                    <div class="mfeature-icon">
+                        <i class="fa fa-question-circle-o"></i>
+                        
+                    </div>
+                    <div class="mfeature-title">Totally Anonymous</div>
+                    <div class="mfeature-details">Your deposits and payouts are tracked using your wallet address. No name or email required.</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="mfeature-box">
+                    <div class="mfeature-icon">
+                        <i class="fa fa-magic"></i>
+                        
+                    </div>
+                    <div class="mfeature-title">Fully Automated &amp; Systematic</div>
+                    <div class="mfeature-details">All confirmations and payouts are automated and on time.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--<div id="message2" class="container-fluid message-area normal-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="text-other-color1">GET STARTED</div>
+                <div class="text-other-color2">Double your coins now.</div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="buttons-holder">
+                    <a href="https://CRPYTO-PIRATES/#double" class="ybtn ybtn-accent-color ybtn-shadow">Double Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div id="footer" class="container-fluid">
+    <div class="container">
+                    <div class="row">
+                        
+                            <img src="{{ url_for('static', filename='img/logo.png') }}" alt=" <?php echo getsettings('site_name'); ?>" />
+                        
+                    </div><br>
+        <div class="row">
+
+            <div class="col-xs-6 col-sm-4 col-md-4 text-left">
+                <h4>     Copyrights ©2020 All Rights Reserved</h4>
+                <p>Easy to use cryptocurrency doubler system. Multiply your coin in just  24 hours. Bitcoin doubler.</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="footer-menu-holder">
+                    <h4>Earn Free Coins</h4>
+                    <p><strong>Want free coin? Extra coins?</strong> Just share your referral link to your friends. You will earn 10 % from each of their deposit.</p><p>
+                </div>
+            </div>           
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="footer-menu-holder">
+                    <h4>Where to Buy Coin?</h4>
+                    <p>Only buy your coins from trusted exchangers. These are some of them.</p>
+                    <p><a href="https://www.binance.com/" target="_blank">Binance.com</a>, <a href="https://bittrex.com/" target="_blank">Bittrex.com</a>, <a href="https://cex.io/" target="_blank">Cex.io</a>, <a href="https://www.coinbase.com/" target="_blank">Coinbase.com</a>, <a href="https://www.kraken.com/" target="_blank">Kraken.com</a>, <a href="https://localbitcoins.com/" target="_blank">LocalBitcoins.com</a>, <a href="https://www.luno.com/" target="_blank">Luno.com</a>, <a href="https://remitano.com/" target="_blank">Remitano.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/loginpage/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/loginpage/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/loginpage/bootstrap-slider.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/loginpage/slick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/loginpage/main.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/loginpage/countdown.js') }}"></script>
+
+</body>
+
+
+</html>
+
+     
